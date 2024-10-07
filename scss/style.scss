@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ccc;
+}
+
+body {
+    height: 100vh;
+    
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(
+        110.6deg,
+        rgb(156, 116, 129) -18.3%,
+        #43364a 16.4%,
+        rgb(47, 48, 67) 68.2%,
+        rgb(27, 23, 36) 99.1%
+    );
+    
+}
+
+.container, .exchange-rates {
+    width: 300px;
+    height: 70vh;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 20px rgba(136, 93, 241, 0.5);
+    margin: 0 50px;
+    
+}
+
+.currency {
+    margin-bottom: 20px;
+    
+}
+
+.currency select,
+.currency input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    color:#43364a;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.rate {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+
+
+.exchange-rates table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exchange-rates th,
+.exchange-rates td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}

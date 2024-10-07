@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="currency">
+            <label for="currency-one">From:</label>
+            <select id="currency-one">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="PLN">PLN</option>
+                <option value="UAH">UAH</option>
+                <option value="TRY">TRY</option>
+            </select>
+            <input type="number" id="amount-one" placeholder="Amount" value="1">
+        </div>
+        <div class="currency">
+            <label for="currency-two">To:</label>
+            <select id="currency-two">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="PLN">PLN</option>
+                <option value="UAH">UAH</option>
+                <option value="TRY">TRY</option>
+            </select>
+            <input type="number" id="amount-two" placeholder="Amount" disabled>
+        </div>
+        <button class="btn" id="convert">Convert</button>
+        <div class="rate" id="rate"></div>
+    </div>
+    <div class="exchange-rates">
+        <h2>Current Exchange Rates to UAH</h2>
+        <table id="exchange-rates-table">
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USD</td>
+                    <td id="rate-usd"></td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td id="rate-eur"></td>
+                </tr>
+                <tr>
+                    <td>GBP</td>
+                    <td id="rate-gbp"></td>
+                </tr>
+                <tr>
+                    <td>PLN</td>
+                    <td id="rate-pln"></td>
+                </tr>
+                <tr>
+                    <td>UAH</td>
+                    <td id="rate-uah"></td>
+                </tr>
+                <tr>
+                    <td>TRY</td>
+                    <td id="rate-try"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./scrypt.js"></script>
+
+</body>
+
+</html>
